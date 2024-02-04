@@ -1,0 +1,463 @@
+@import url(variables.css);
+
+@media screen and (max-width: 1920px) {
+  .section-portfolio {
+    padding-top: 60px;
+  }
+  
+  .section-portfolio > .conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .portfolio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 0px 60px;
+  }
+  
+  .portfolio .title {
+    color: var(--color-white);
+    font: normal 800 44px / normal Raleway;
+    padding: 10px 0px 20px 0px;
+  }
+  
+  .text {
+    font: normal 400 16px/24px IBM Plex Mono;
+    color: var(--color-text-grey);
+  }
+
+  .portfolio .text {
+    width: 450px;
+  }
+  
+  .portfolio .button {
+    padding: 21px 64px;
+    border-radius: 4px;
+    border: 1px solid var(--color-border-button);
+    background: var(--color-primary);
+    box-shadow: 0px 8px 30px 0px var(--color-shadow-button);
+    color: var(--color-white);
+    font: normal 700 16px / normal IBM Plex Mono;
+    margin: 30px 0px;
+  }
+  
+  .portfolio .img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+  }
+  
+  .buttons-portfolio {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  
+  .buttons-portfolio > .text {
+    font-family: IBM Plex Mono;
+    color: var(--color-white);
+    margin: 0px 0px 10px 100px;
+  }
+  
+  .button-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0px 0px 45px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .buttons-portfolio > .text {
+    margin: 0px 0px 10px 15px;
+  }
+}
+  
+@media screen and (max-width: 960px) {
+  .buttons-portfolio > .text {
+    margin: 0px 0px 10px 25px;
+  }
+
+  .button-logos {
+    gap: 15px;
+  }
+
+  .button-logos__item {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio .title {
+    font: normal 800 36px / normal Raleway;
+  }
+  
+  .text {
+    font: normal 400 14px/24px IBM Plex Mono;
+  }
+
+  .portfolio .text {
+    width: 350px;
+  }
+
+  .portfolio .img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .button-logos {
+    gap: 10px;
+  }
+
+  .button-logos__item {
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .section-portfolio {
+    padding-top: 20px;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px 0px 20px;
+  }
+
+  .portfolio .img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .portfolio__desk {
+    text-align: center;
+  }
+
+  .button-logos__item {
+    width: 140px;
+  }
+
+  .button-logos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .portfolio .text {
+    width: 320px;
+  }
+}
+
+/* case-studies */
+
+@media screen and (max-width: 1920px) {
+  .section-case-studies {
+    background-color: var(--color-background-purple);
+    padding: 80px 0px 1px 0px;
+  }
+  
+  .your-name {
+    text-align: center;
+  }
+  
+  .your-name > .your-name__title {
+    color: var(--color-primary);
+    font: normal 800 38px / normal Raleway;
+    margin: 0px 0px 10px;
+  }
+  
+  .text_purple {
+    color: var(--color-text-purple);
+    font: normal 400 18px/24px IBM Plex Mono;
+    letter-spacing: 0.14px;
+  }
+  
+  .case {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 60px 0px 80px;
+    gap: 60px;
+  }
+  
+  .section-case-studies .desk__img {
+    width: 435px;
+    height: 300px;
+  }
+  
+  .desk > .desk__title {
+    display: inline-flex;
+    border-radius: 60px;
+    padding: 0px 10px;
+    font: normal 700 12px/24px IBM Plex Mono;
+    margin-top: 27px;
+  }
+  
+  .case_orange > .desk > .desk__title {
+    color: var(--color-text-purple);
+    background-color: var(--color-prefics);
+  }
+  
+  .case_blue > .desk > .desk__title {
+    color: var(--color-text-purple);
+    background-color: var(--color-prefics);
+  }
+  
+  .case_green > .desk > .desk__title {
+    color: var(--color-text-purple);
+    background-color: var(--color-prefics);
+  }
+  
+  .desk > .desk__name {
+    color: var(--color-primary);
+    font: normal 800 26px / normal Raleway;
+    margin: 20px 0px 10px;
+  }
+  
+  .desk > .desk__text {
+    color: var(--color-text-purple);
+    font: normal 400 18px/24px IBM Plex Mono;
+    letter-spacing: 0.14px;
+  }
+  
+  .desk > .desk__button {
+    padding: 10px 24px;
+    color: var(--color-white);
+    font: normal 700 18px / normal IBM Plex Mono;
+    border-radius: 4px;
+    border: none;
+    margin-top: 40px;
+  }
+  
+  .case_orange > .desk > .desk__button {
+    background: var(--color-text-purple);
+    box-shadow: 0px 8px 30px 0px var(--color-shadow-button);
+  }
+  
+  .case_blue > .desk > .desk__button {
+    background: var(--color-primary);
+    box-shadow: 0px 8px 30px 0px var(--color-shadow-button);
+  }
+  
+  .case_green > .desk > .desk__button {
+    background: var(--color-primary);
+    box-shadow: 0px 8px 30px 0px var(--color-shadow-button);
+  }
+}
+
+
+
+/* Testimonials */
+
+.section-testimonials .container {
+  padding: 30px 0px 30px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--color-white);
+}
+
+.testimonial__part {
+  padding: 5px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  border-image: linear-gradient(left, var(--color-border-grey), var(--color-border-black));
+  -moz-border-image: -moz-linear-gradient(left, var(--color-border-grey), var(--color-border-black));
+  -webkit-border-image: -webkit-linear-gradient(left, var(--color-border-grey), var(--color-border-black));
+  border-image-slice: 1;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 0px 30px 0px;
+}
+
+.testimonial__title {
+  color: var(--color-white);
+  font: normal 800 34px / normal Raleway;
+  text-align: center;
+  margin: 0px 0px 10px;
+}
+
+.testimonial .text {
+  color: var(--color-text-grey);
+  font: normal 400 14px/24px IBM Plex Mono;
+  text-align: center;
+  letter-spacing: 0.14px;
+}
+
+.testimonial__first-duo,
+.testimonial__second-duo {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 30px 0px 30px;
+  gap: 36px;
+}
+
+.testimonial__img {
+  margin: 30px 0px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  color: var(--color-white);
+  font: normal 700 16px / normal Raleway;
+}
+
+.text_testimonial {
+  color: var(--color-text-grey);
+  font: normal 400 14px/24px IBM Plex Mono;
+  letter-spacing: 0.14px;
+}
+
+.testimonial__quotes {
+  width: 24px;
+  position: relative;
+  right: 10px;
+  bottom: 20px;
+}
+
+/* Recent work */
+
+.section-recent-work {
+  width: 100%;
+  background-color: var(--color-background-purple);
+  padding: 80px 0px 80px;
+}
+
+.recent-work__title {
+  color: var(--color-primary);
+  font: normal 800 38px / normal Raleway;
+  text-align: center;
+  margin: 0px 0px 10px;
+}
+
+.recent-work .text_purple {
+  margin: 0px 0px 60px;
+  color: var(--color-text-purple);
+  text-align: center;
+  font: normal 400 18px/24px IBM Plex Mono;
+  letter-spacing: 0.14px;
+}
+
+.recent-work-names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  margin: 0px 65px 0px 65px;
+}
+
+.recent-work-name__img {
+  width: 445px;
+  height: 300px;
+  margin: 0px 0px 40px;
+}
+
+.recent-work-name__title {
+  margin: 40px 0px 20px;
+  color: var(--color-primary);
+  font: normal 800 28px / normal Raleway;
+}
+
+.recent-work-names .text_purple {
+  margin: 0px 0px 20px;
+  color: var(--color-text-purple);
+  font: normal 400 16px/24px IBM Plex Mono;
+  letter-spacing: 0.14px;
+}
+
+.recent-work-name__button {
+  display: inline-flex;
+  padding: 10px 24px;
+  align-items: center;
+  color: var(--color-white);
+  font: normal 700 16px / normal IBM Plex Mono;
+  border-radius: 4px;
+  border: 1px solid var(--color-border-button);
+  background: var(--color-primary);
+  box-shadow: 0px 8px 30px 0px var(--color-shadow-button);
+}
+
+.recent-work-names__call {
+  width: 30px;
+  height: 30px;
+}
+
+/* Get in Touch */
+
+.section-get-in-touch {
+  padding: 81px 0px 80px 0px;
+}
+.get-in-touch {
+  display: flex;
+  justify-content: center;
+}
+.get-in-touch__title {
+  margin-bottom: 10px;
+  color: var(--color-white);
+  font: normal 800 34px / normal Raleway;
+  text-align: center;
+}
+.get-in-touch .text {
+  margin-bottom: 40px;
+  color: var(--color-text-grey);
+  font: normal 400 14px/24px IBM Plex Mono;
+  text-align: center;
+  letter-spacing: 0.14px;
+}
+.get-in-touch__form {
+  display: flex;
+  justify-content: center;
+  color: var(--color-white);
+  font: normal 600 12px / normal IBM Plex Mono;
+}
+.get-in-touch__form #Email,
+#Mobile,
+#Message {
+  margin-bottom: 20px;
+  padding: 0px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--color-background-window);
+  background: var(--color-white);
+  color: var(--color-text-window);
+  font: normal 400 12px/21px IBM Plex Mono;
+}
+.get-in-touch__form #Email,
+#Mobile {
+  display: flex;
+  width: 350px;
+  height: 40px;
+}
+.get-in-touch__form #Message {
+  display: flex;
+  width: 350px;
+  height: 120px;
+}
+.get-in-touch__form #sumbit {
+  display: flex;
+  width: 350px;
+  padding: 16px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--color-border-button);
+  background: var(--color-primary);
+  box-shadow: 0px 8px 30px 0px var(--color-shadow-button);
+  color: var(--color-white);
+  font: normal 700 14px / normal IBM Plex Mono;
+}

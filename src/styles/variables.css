@@ -1,0 +1,14 @@
+:root{
+    --color-primary:#5f007c;
+    --color-white: #fff;
+    --color-text-purple: #6d008f;
+    --color-text-grey: #9c9c9c;
+    --color-border-grey: #484848;
+    --color-background-purple: #efc5ff;
+    --color-border-button: #8d1bba;
+    --color-prefics: #d68fec;
+    --color-shadow-button: rgba(92, 0, 142, 0.5);
+    --color-border-black: #1b1b1b00;
+    --color-background-window: #d8d8d8;
+    --color-text-window: #757575;
+}

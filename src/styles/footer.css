@@ -1,0 +1,11 @@
+.section-footer {
+    padding: 26px 0px;
+    background: #1b1b1b;
+  }
+
+.footer {
+    color: #9c9c9c;
+    font: normal 400 14px / normal IBM Plex Mono;
+    text-align: center;
+    letter-spacing: 0.14px;
+}
