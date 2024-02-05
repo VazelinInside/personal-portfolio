@@ -1,259 +1,192 @@
 @import url(variables.css);
+@import url(adaptive.css);
 
-@media screen and (max-width: 1920px) {
-  .section-portfolio {
-    padding-top: 60px;
-  }
-  
-  .section-portfolio > .conteiner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .portfolio {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0px 0px 60px;
-  }
-  
-  .portfolio .title {
-    color: var(--color-white);
-    font: normal 800 44px / normal Raleway;
-    padding: 10px 0px 20px 0px;
-  }
-  
-  .text {
-    font: normal 400 16px/24px IBM Plex Mono;
-    color: var(--color-text-grey);
-  }
-
-  .portfolio .text {
-    width: 450px;
-  }
-  
-  .portfolio .button {
-    padding: 21px 64px;
-    border-radius: 4px;
-    border: 1px solid var(--color-border-button);
-    background: var(--color-primary);
-    box-shadow: 0px 8px 30px 0px var(--color-shadow-button);
-    color: var(--color-white);
-    font: normal 700 16px / normal IBM Plex Mono;
-    margin: 30px 0px;
-  }
-  
-  .portfolio .img {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-  }
-  
-  .buttons-portfolio {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-  
-  .buttons-portfolio > .text {
-    font-family: IBM Plex Mono;
-    color: var(--color-white);
-    margin: 0px 0px 10px 100px;
-  }
-  
-  .button-logos {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 0px 0px 45px;
-  }
+.section-portfolio {
+  padding-top: 60px;
 }
 
-@media screen and (max-width: 1280px) {
-  .buttons-portfolio > .text {
-    margin: 0px 0px 10px 15px;
-  }
-}
-  
-@media screen and (max-width: 960px) {
-  .buttons-portfolio > .text {
-    margin: 0px 0px 10px 25px;
-  }
-
-  .button-logos {
-    gap: 15px;
-  }
-
-  .button-logos__item {
-    width: 140px;
-  }
+.section-portfolio > .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-@media screen and (max-width: 800px) {
-  .portfolio .title {
-    font: normal 800 36px / normal Raleway;
-  }
-  
-  .text {
-    font: normal 400 14px/24px IBM Plex Mono;
-  }
-
-  .portfolio .text {
-    width: 350px;
-  }
-
-  .portfolio .img {
-    width: 250px;
-    height: 250px;
-  }
-
-  .button-logos {
-    gap: 10px;
-  }
-
-  .button-logos__item {
-    width: 110px;
-  }
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px 0px 60px;
 }
 
-@media screen and (max-width: 640px){
-  .section-portfolio {
-    padding-top: 20px;
-  }
-
-  .portfolio {
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 0px 0px 20px;
-  }
-
-  .portfolio .img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .portfolio__desk {
-    text-align: center;
-  }
-
-  .button-logos__item {
-    width: 140px;
-  }
-
-  .button-logos {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.portfolio__desk {
+  width: 48%;
 }
 
-@media screen and (max-width: 400px){
-  .portfolio .text {
-    width: 320px;
-  }
+.portfolio .title {
+  color: var(--color-white);
+  font: normal 800 44px / normal Raleway;
+  padding: 10px 0px 20px 0px;
+}
+
+.text {
+  font: normal 400 16px/24px IBM Plex Mono;
+  color: var(--color-text-grey);
+}
+
+.portfolio .button {
+  padding: 21px 64px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border-button);
+  background: var(--color-primary);
+  box-shadow: 0px 8px 30px 0px var(--color-shadow-button);
+  color: var(--color-white);
+  font: normal 700 16px / normal IBM Plex Mono;
+  margin: 30px 0px;
+}
+
+.portfolio .img {
+  width: 31.5%;
+}
+
+.portfolio .img__php {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.buttons-portfolio {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.buttons-portfolio > .text {
+  font-family: IBM Plex Mono;
+  color: var(--color-white);
+  margin: 0px 0px 10px 10%;
+}
+
+.button-logos {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10%;
+  margin: 0px 0px 45px;
+}
+
+.button-logos__item {
+  width: 100%;
 }
 
 /* case-studies */
 
-@media screen and (max-width: 1920px) {
-  .section-case-studies {
-    background-color: var(--color-background-purple);
-    padding: 80px 0px 1px 0px;
-  }
-  
-  .your-name {
-    text-align: center;
-  }
-  
-  .your-name > .your-name__title {
-    color: var(--color-primary);
-    font: normal 800 38px / normal Raleway;
-    margin: 0px 0px 10px;
-  }
-  
-  .text_purple {
-    color: var(--color-text-purple);
-    font: normal 400 18px/24px IBM Plex Mono;
-    letter-spacing: 0.14px;
-  }
-  
-  .case {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin: 60px 0px 80px;
-    gap: 60px;
-  }
-  
-  .section-case-studies .desk__img {
-    width: 435px;
-    height: 300px;
-  }
-  
-  .desk > .desk__title {
-    display: inline-flex;
-    border-radius: 60px;
-    padding: 0px 10px;
-    font: normal 700 12px/24px IBM Plex Mono;
-    margin-top: 27px;
-  }
-  
-  .case_orange > .desk > .desk__title {
-    color: var(--color-text-purple);
-    background-color: var(--color-prefics);
-  }
-  
-  .case_blue > .desk > .desk__title {
-    color: var(--color-text-purple);
-    background-color: var(--color-prefics);
-  }
-  
-  .case_green > .desk > .desk__title {
-    color: var(--color-text-purple);
-    background-color: var(--color-prefics);
-  }
-  
-  .desk > .desk__name {
-    color: var(--color-primary);
-    font: normal 800 26px / normal Raleway;
-    margin: 20px 0px 10px;
-  }
-  
-  .desk > .desk__text {
-    color: var(--color-text-purple);
-    font: normal 400 18px/24px IBM Plex Mono;
-    letter-spacing: 0.14px;
-  }
-  
-  .desk > .desk__button {
-    padding: 10px 24px;
-    color: var(--color-white);
-    font: normal 700 18px / normal IBM Plex Mono;
-    border-radius: 4px;
-    border: none;
-    margin-top: 40px;
-  }
-  
-  .case_orange > .desk > .desk__button {
-    background: var(--color-text-purple);
-    box-shadow: 0px 8px 30px 0px var(--color-shadow-button);
-  }
-  
-  .case_blue > .desk > .desk__button {
-    background: var(--color-primary);
-    box-shadow: 0px 8px 30px 0px var(--color-shadow-button);
-  }
-  
-  .case_green > .desk > .desk__button {
-    background: var(--color-primary);
-    box-shadow: 0px 8px 30px 0px var(--color-shadow-button);
+.section-case-studies {
+  background-color: var(--color-background-purple);
+  padding: 80px 0px 1px 0px;
+}
+
+.your-name {
+  text-align: center;
+}
+
+.your-name > .your-name__title {
+  color: var(--color-primary);
+  font: normal 800 38px / normal Raleway;
+  margin: 0px 0px 10px;
+}
+
+.text_purple {
+  color: var(--color-text-purple);
+  font: normal 400 16px/24px IBM Plex Mono;
+  letter-spacing: 0.14px;
+}
+
+.case {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 60px 0px 80px;
+}
+
+.case__img {
+  display: flex;
+  align-items: center;
+  width: 39.2%;
+}
+
+.section-case-studies .desk__img {
+  width: 100%;
+}
+
+.desk {
+  height: 100%;
+}
+
+.desk__title {
+  display: inline-flex;
+  border-radius: 60px;
+  padding: 0px 10px;
+  font: normal 700 12px/24px IBM Plex Mono;
+  margin-top: 27px;
+}
+
+.case_orange > .desk > .desk__title {
+  color: var(--color-text-purple);
+  background-color: var(--color-prefics);
+}
+
+.case_blue > .desk > .desk__title {
+  color: var(--color-text-purple);
+  background-color: var(--color-prefics);
+}
+
+.case_green > .desk > .desk__title {
+  color: var(--color-text-purple);
+  background-color: var(--color-prefics);
+}
+
+.desk__name {
+  color: var(--color-primary);
+  font: normal 800 26px / normal Raleway;
+  margin-top: 20px;
+}
+
+.desk > .text_purple {
+  margin-top: 10px;
+}
+
+.desk__button {
+  padding: 10px 24px;
+  color: var(--color-white);
+  font: normal 700 18px / normal IBM Plex Mono;
+  border-radius: 4px;
+  border: none;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 960px) {
+  .desk__title,
+  .desk__name,
+  .desk > .text_purple,
+  .desk__button {
+    margin-top:0px;
   }
 }
 
+.case_orange > .desk > .desk__button {
+  background: var(--color-text-purple);
+  box-shadow: 0px 8px 30px 0px var(--color-shadow-button);
+}
 
+.case_blue > .desk > .desk__button {
+  background: var(--color-primary);
+  box-shadow: 0px 8px 30px 0px var(--color-shadow-button);
+}
+
+.case_green > .desk > .desk__button {
+  background: var(--color-primary);
+  box-shadow: 0px 8px 30px 0px var(--color-shadow-button);
+}
 
 /* Testimonials */
 
@@ -304,7 +237,7 @@
   justify-content: center;
   flex-direction: row;
   margin: 30px 0px 30px;
-  gap: 36px;
+  gap: 4%;
 }
 
 .testimonial__img {
@@ -333,7 +266,6 @@
 /* Recent work */
 
 .section-recent-work {
-  width: 100%;
   background-color: var(--color-background-purple);
   padding: 80px 0px 80px;
 }
@@ -346,7 +278,8 @@
 }
 
 .recent-work .text_purple {
-  margin: 0px 0px 60px;
+  width: 51.3%;
+  margin: 0px auto 60px;
   color: var(--color-text-purple);
   text-align: center;
   font: normal 400 18px/24px IBM Plex Mono;
@@ -356,15 +289,16 @@
 .recent-work-names {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 30px;
-  margin: 0px 65px 0px 65px;
+  gap: 3%;
+  margin: 0px 6%;
+}
+
+.recent-work-name {
+  width: 40.1%;
 }
 
 .recent-work-name__img {
-  width: 445px;
-  height: 300px;
+  width: 100%;
   margin: 0px 0px 40px;
 }
 
@@ -382,9 +316,7 @@
 }
 
 .recent-work-name__button {
-  display: inline-flex;
   padding: 10px 24px;
-  align-items: center;
   color: var(--color-white);
   font: normal 700 16px / normal IBM Plex Mono;
   border-radius: 4px;
@@ -394,6 +326,8 @@
 }
 
 .recent-work-names__call {
+  display: flex;
+  align-self: center;
   width: 30px;
   height: 30px;
 }
@@ -414,7 +348,8 @@
   text-align: center;
 }
 .get-in-touch .text {
-  margin-bottom: 40px;
+  width: 60%;
+  margin: 0px auto 40px;
   color: var(--color-text-grey);
   font: normal 400 14px/24px IBM Plex Mono;
   text-align: center;
@@ -426,6 +361,11 @@
   color: var(--color-white);
   font: normal 600 12px / normal IBM Plex Mono;
 }
+
+form {
+  width: 31.5%;
+}
+
 .get-in-touch__form #Email,
 #Mobile,
 #Message {
@@ -440,17 +380,17 @@
 .get-in-touch__form #Email,
 #Mobile {
   display: flex;
-  width: 350px;
+  width: 100%;
   height: 40px;
 }
 .get-in-touch__form #Message {
   display: flex;
-  width: 350px;
+  width: 100%;
   height: 120px;
 }
 .get-in-touch__form #sumbit {
   display: flex;
-  width: 350px;
+  width: 100%;
   padding: 16px 0px;
   justify-content: center;
   align-items: center;
