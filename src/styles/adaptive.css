@@ -17,6 +17,10 @@
         display: flex;
     }
 
+    .section-case-studies {
+        padding: 20px 0px;
+    }
+
     .your-name {
         width: 80%;
     }
@@ -26,7 +30,7 @@
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
-        margin: 40px 0px;
+        margin: 40px 0px 0px;
     }
 
     .case_blue {
@@ -51,4 +55,43 @@
     .desk__button {
         margin-top: 10px;
     }
+
+    .section-testimonials {
+        padding: 30px 0px 10px;
+    }
+
+    .testimonial {
+        margin: 30px auto;
+        width: 70%;
+    }
+
+    .testimonial__first-duo,
+    .testimonial__second-duo {
+        margin: 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px;
+    }
+
+    .testimonial__part {
+        width: 60%;
+    }
+
+    .recent-work-name_first {
+        width: 60%;
+        text-align: center;
+    }
+
+    .recent-work-name_second {
+        display: none;
+    }
+
+    .recent-work-name__img {
+        margin: 0px;
+    }
+
+    form {
+        width: 50%;
+      }
 }
