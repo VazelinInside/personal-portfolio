@@ -275,7 +275,12 @@
 
 .section-recent-work {
   background-color: var(--color-background-purple);
-  padding: 80px 0px 80px;
+  padding: 80px 0px;
+}
+
+.recent-work {
+  width: 50%;
+  margin: 0px auto;
 }
 
 .recent-work__title {
@@ -286,7 +291,7 @@
 }
 
 .recent-work .text_purple {
-  width: 51.3%;
+  width: 100%;
   margin: 0px auto 60px;
   color: var(--color-text-purple);
   text-align: center;
@@ -345,24 +350,31 @@
 .section-get-in-touch {
   padding: 81px 0px 80px 0px;
 }
+
 .get-in-touch {
   display: flex;
   justify-content: center;
 }
+
+.get-in-touch__header {
+  width: 60%;
+}
+
 .get-in-touch__title {
   margin-bottom: 10px;
   color: var(--color-white);
   font: normal 800 34px / normal Raleway;
   text-align: center;
 }
+
 .get-in-touch .text {
-  width: 60%;
-  margin: 0px auto 40px;
+  margin: 0px 0px 40px;
   color: var(--color-text-grey);
   font: normal 400 14px/24px IBM Plex Mono;
   text-align: center;
   letter-spacing: 0.14px;
 }
+
 .get-in-touch__form {
   display: flex;
   justify-content: center;
