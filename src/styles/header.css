@@ -1,5 +1,5 @@
 
-.header-menu > .container {
+.header > .container {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -18,10 +18,13 @@
   width: 65%;
 }
 
+.hamburger {
+  display: none;
+}
+
 .menu {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   justify-content: space-between;
