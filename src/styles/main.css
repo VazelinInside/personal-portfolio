@@ -111,7 +111,7 @@
 }
 
 .case__img {
-  min-width: 250px;;
+  min-width: 250px;
   display: flex;
   align-items: center;
   width: 39.2%;
@@ -226,8 +226,7 @@
   letter-spacing: 0.14px;
 }
 
-.testimonial__first-duo,
-.testimonial__second-duo {
+.testimonial-duo{
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -235,7 +234,7 @@
   gap: 4%;
 }
 
-.testimonial__part {
+.testimonial-duo__part {
   width: 45%;
   padding: 5px 0px 30px 30px;
   display: flex;
@@ -248,7 +247,7 @@
   border-image-slice: 1;
 }
 
-.testimonial__img {
+.testimonial-duo__img {
   margin: 30px 0px 0px;
   display: flex;
   align-items: center;
@@ -264,7 +263,7 @@
   letter-spacing: 0.14px;
 }
 
-.testimonial__quotes {
+.testimonial-duo__quotes {
   width: 24px;
   position: relative;
   right: 10px;
@@ -382,7 +381,7 @@
   font: normal 600 12px / normal IBM Plex Mono;
 }
 
-form {
+.form {
   width: 350px;
 }
 
