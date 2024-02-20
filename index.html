@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="src/styles/main.css" />
     <link rel="stylesheet" href="src/styles/principal.css" />
     <link rel="stylesheet" href="src/styles/footer.css" />
+    <link rel="stylesheet" href="src/styles/adaptive.css">
+    <script defer src="/src/js/main.js"></script>
   </head>
 
   <body>
-    <header class="header-menu">
+    <header class="header">
       <div id="Home" class="container">
         <nav class="navigation">
-          <ul class="menu">
+          <div class="hamburger" id="burger">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>  
+          <ul class="menu" id="menu">
             <li><a href="#Home" class="menu__item">Home</a></li>
             <li><a href="#case-studies" class="menu__item">Case Studies</a></li>
             <li><a href="#testimonials" class="menu__item">Testimonials</a></li>
@@ -38,7 +45,7 @@
               <p class="text">
                 Intro text: Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua.
+                labore et dolore magna aliqua. 
               </p>
               <button class="button">Let’s get started ></button>
             </div>
@@ -63,8 +70,8 @@
           <div class="your-name">
             <h1 class="your-name__title">Case Studies</h1>
             <p class="text text_purple">
-              Solving user & business problems since last 15+ years.<br />Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />eiusmod
+              Solving user & business problems since last 15+ years. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
@@ -73,9 +80,9 @@
               <p class="desk__title">Fintech</p>
               <h1 class="desk__name">Work name here</h1>
               <p class="text text_purple">
-                Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit,
-                sed do eiusmod tempor incididunt<br />ut labore et dolore magna
-                aliqua. sed do eiusmod<br />tempor incididunt ut labore et
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. sed do eiusmod tempor incididunt ut labore et
                 dolore magna.
               </p>
               <button class="desk__button">View case study ></button>
@@ -92,9 +99,9 @@
               <p class="desk__title">EdTech</p>
               <h1 class="desk__name">Work name here</h1>
               <p class="text text_purple">
-                Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit,
-                sed do eiusmod tempor incididunt<br />ut labore et dolore magna
-                aliqua. sed do eiusmod<br />tempor incididunt ut labore et
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. sed do eiusmod tempor incididunt ut labore et
                 dolore magna.
               </p>
               <button class="desk__button">View case study ></button>
@@ -105,9 +112,9 @@
               <p class="desk__title">Pharma</p>
               <h1 class="desk__name">Work name here</h1>
               <p class="text text_purple">
-                Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit,
-                sed do eiusmod tempor incididunt<br />ut labore et dolore magna
-                aliqua. sed do eiusmod<br />tempor incididunt ut labore et
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. sed do eiusmod tempor incididunt ut labore et
                 dolore magna.
               </p>
               <button class="desk__button">View case study ></button>
@@ -123,59 +130,59 @@
           <div class="testimonial">
             <h1 class="testimonial__title">Testimonials</h1>
             <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />eiusmod
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div class="testimonial__first-duo">
-            <div class="testimonial__part">
-              <img class="testimonial__quotes" src="src/img/kav.png" />
+          <div class="testimonial-duo">
+            <div class="testimonial-duo__part">
+              <img class="testimonial-duo__quotes" src="src/img/kav.png" />
               <p class="text text_testimonial">
-                Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit,
-                sed do eiusmod tempor<br />incididunt ut labore et dolore magna
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua.
               </p>
-              <div class="testimonial__img">
-                <img class="testimonial__pfp" src="src/img/Client1.png" />
-                <h1 class="testimonial__name">Client Name</h1>
+              <div class="testimonial-duo__img">
+                <img class="testimonial-duo__pfp" src="src/img/Client1.png" />
+                <h1 class="testimonial-duo__name">Client Name</h1>
               </div>
             </div>
-            <div class="testimonial__part">
-              <img class="testimonial__quotes" src="src/img/kav.png" />
+            <div class="testimonial-duo__part">
+              <img class="testimonial-duo__quotes" src="src/img/kav.png" />
               <p class="text text_testimonial">
-                Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit,
-                sed do eiusmod tempor<br />incididunt ut labore et dolore magna
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua.
               </p>
-              <div class="testimonial__img">
-                <img class="testimonial__pfp" src="src/img/Client2.png" />
-                <h1 class="testimonial__name">Client Name</h1>
+              <div class="testimonial-duo__img">
+                <img class="testimonial-duo__pfp" src="src/img/Client2.png" />
+                <h1 class="testimonial-duo__name">Client Name</h1>
               </div>
             </div>
           </div>
-          <div class="testimonial__second-duo">
-            <div class="testimonial__part">
-              <img class="testimonial__quotes" src="src/img/kav.png" />
+          <div class="testimonial-duo">
+            <div class="testimonial-duo__part">
+              <img class="testimonial-duo__quotes" src="src/img/kav.png" />
               <p class="text text_testimonial">
-                Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit,
-                sed do eiusmod tempor<br />incididunt ut labore et dolore magna
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua.
               </p>
-              <div class="testimonial__img">
-                <img class="testimonial__pfp" src="src/img/Client3.png" />
-                <h1 class="testimonial__name">Client Name</h1>
+              <div class="testimonial-duo__img">
+                <img class="testimonial-duo__pfp" src="src/img/Client3.png" />
+                <h1 class="testimonial-duo__name">Client Name</h1>
               </div>
             </div>
-            <div class="testimonial__part">
-              <img class="testimonial__quotes" src="src/img/kav.png" />
+            <div class="testimonial-duo__part">
+              <img class="testimonial-duo__quotes" src="src/img/kav.png" />
               <p class="text text_testimonial">
-                Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit,
-                sed do eiusmod tempor<br />incididunt ut labore et dolore magna
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua.
               </p>
-              <div class="testimonial__img">
-                <img class="testimonial__pfp" src="src/img/Client4.png" />
-                <h1 class="testimonial__name">Client Name</h1>
+              <div class="testimonial-duo__img">
+                <img class="testimonial-duo__pfp" src="src/img/Client4.png" />
+                <h1 class="testimonial-duo__name">Client Name</h1>
               </div>
             </div>
           </div>
@@ -193,7 +200,7 @@
           </div>
           <div class="recent-work-names">
             <img class="recent-work-names__call" src="src/img/call-to-action1.png" />
-            <div class="recent-work-name">
+            <div class="recent-work-name recent-work-name_first">
               <img class="recent-work-name__img" src="src/img/mask-group1.png" />
               <h1 class="recent-work-name__title">Work name here</h1>
               <p class="text text_purple">
@@ -202,7 +209,7 @@
               </p>
               <button class="recent-work-name__button">know more ></button>
             </div>
-            <div class="recent-work-name">
+            <div class="recent-work-name recent-work-name_second">
               <img class="recent-work-name__img" src="src/img/mask-group2.png" />
               <h1 class="recent-work-name__title">Work name here</h1>
               <p class="text text_purple">
@@ -228,7 +235,7 @@
             </div>
           </div>
           <div class="get-in-touch__form">
-            <form>
+            <form class="form">
               <label for="Email">Email</label>
               <input
                 type="text"

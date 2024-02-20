@@ -1,0 +1,208 @@
+@media screen and (max-width: 768px) {
+    .section-portfolio {
+        padding: 20px 0px 20px;
+    }
+
+    .header.open .menu {
+        transform: translateX(100%);
+    }
+
+    .header.open .hamburger {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 23px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: var(--color-text-window);
+    }
+
+    .menu{
+        padding: 100px 0px ;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        background-color: var(--color-border-black);
+        width: 50%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 0px;
+        left: -50%;
+        transition: transform .5s;
+    }
+
+    .menu .menu__item {
+        font: normal 400 18px / normal IBM Plex Mono;
+    }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .portfolio__desk {
+        width: 80%;
+        text-align: center;
+    }
+
+    .buttons-logos {
+        display: flex;
+    }
+
+    .section-case-studies {
+        padding: 20px 0px;
+    }
+
+    .your-name {
+        width: 70%;
+    }
+
+    .case {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin: 40px 0px 0px;
+    }
+
+    .case_blue {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .case__img {
+        width: 50%
+    }
+
+    .desk {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desk__title,
+    .desk__name,
+    .desk > .text_purple,
+    .desk__button {
+        margin-top: 10px;
+    }
+
+    .section-testimonials {
+        padding: 30px 0px 10px;
+    }
+
+    .testimonial {
+        margin: 30px auto;
+        width: 70%;
+    }
+
+    .testimonial-duo {
+        margin: 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px;
+    }
+
+    .testimonial-duo__part {
+        width: 70%;
+    }
+
+    .section-recent-work {
+        padding: 20px 0px;
+    }
+
+    .recent-work {
+        width: 70%;
+    }
+
+    .recent-work-name_first {
+        width: 60%;
+        text-align: center;
+    }
+
+    .recent-work-name_second {
+        display: none;
+    }
+
+    .recent-work-name__img {
+        margin: 0px;
+    }
+
+    .section-get-in-touch {
+        padding: 20px 0px;
+    }
+
+    .form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .header.open .menu {
+        transform: translateY(100%);
+    }
+
+    .header.open .hamburger {
+        display: none;
+    }
+
+    .menu {
+        left: 0;
+        width: 100%;
+        top: -100%;
+        transition: transform .5s;
+    }
+
+    .menu .menu__item {
+        font: normal 400 22px / normal IBM Plex Mono;
+    }
+
+    .desk__button {
+        font-size: 16px;
+    }
+
+    .text_purple {
+        font-size: 14px;
+    }
+
+    .recent-work .text_purple {
+        font: normal 400 16px/24px IBM Plex Mono;
+    }
+
+    .recent-work-names {
+        display: flex;
+        justify-content: space-around;
+        gap: 0px;
+    }
+
+    .recent-work-name_first {
+        width: 70%;
+    }
+
+    .get-in-touch__header {
+        width: 80%;
+    }
+
+    .form {
+        width: 70%;
+    }
+}

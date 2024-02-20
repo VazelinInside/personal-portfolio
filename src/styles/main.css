@@ -2,7 +2,7 @@
 @import url(adaptive.css);
 
 .section-portfolio {
-  padding-top: 60px;
+  padding: 60px 0px 45px;
 }
 
 .section-portfolio > .container {
@@ -36,7 +36,7 @@
 }
 
 .portfolio .button {
-  padding: 21px 64px;
+  padding: 21px 10%;
   border-radius: 4px;
   border: 1px solid var(--color-border-button);
   background: var(--color-primary);
@@ -47,6 +47,7 @@
 }
 
 .portfolio .img {
+  min-width: 220px;
   width: 31.5%;
 }
 
@@ -69,9 +70,8 @@
 
 .button-logos {
   display: flex;
-  justify-content: space-between;
-  padding: 0px 10%;
-  margin: 0px 0px 45px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .button-logos__item {
@@ -82,10 +82,12 @@
 
 .section-case-studies {
   background-color: var(--color-background-purple);
-  padding: 80px 0px 1px 0px;
+  padding: 80px 0px 1px;
 }
 
 .your-name {
+  width: 60%;
+  margin: 0px auto;
   text-align: center;
 }
 
@@ -109,17 +111,18 @@
 }
 
 .case__img {
+  min-width: 250px;
   display: flex;
   align-items: center;
   width: 39.2%;
 }
 
-.section-case-studies .desk__img {
+.desk__img {
   width: 100%;
 }
 
 .desk {
-  height: 100%;
+  width: 50%;
 }
 
 .desk__title {
@@ -190,31 +193,23 @@
 
 /* Testimonials */
 
+.section-testimonials {
+  padding: 30px 0px;
+}
+
 .section-testimonials .container {
-  padding: 30px 0px 30px 0px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   color: var(--color-white);
 }
 
-.testimonial__part {
-  padding: 5px 30px 30px 30px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  border-image: linear-gradient(left, var(--color-border-grey), var(--color-border-black));
-  -moz-border-image: -moz-linear-gradient(left, var(--color-border-grey), var(--color-border-black));
-  -webkit-border-image: -webkit-linear-gradient(left, var(--color-border-grey), var(--color-border-black));
-  border-image-slice: 1;
-}
-
 .testimonial {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 50px 0px 30px 0px;
+  margin: 50px auto 30px;
 }
 
 .testimonial__title {
@@ -231,16 +226,28 @@
   letter-spacing: 0.14px;
 }
 
-.testimonial__first-duo,
-.testimonial__second-duo {
+.testimonial-duo{
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin: 30px 0px 30px;
+  margin: 30px auto 30px;
   gap: 4%;
 }
 
-.testimonial__img {
+.testimonial-duo__part {
+  width: 45%;
+  padding: 5px 0px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  border-image: linear-gradient(left, var(--color-border-grey), var(--color-border-black));
+  -moz-border-image: -moz-linear-gradient(left, var(--color-border-grey), var(--color-border-black));
+  -webkit-border-image: -webkit-linear-gradient(left, var(--color-border-grey), var(--color-border-black));
+  border-image-slice: 1;
+}
+
+.testimonial-duo__img {
   margin: 30px 0px 0px;
   display: flex;
   align-items: center;
@@ -256,7 +263,7 @@
   letter-spacing: 0.14px;
 }
 
-.testimonial__quotes {
+.testimonial-duo__quotes {
   width: 24px;
   position: relative;
   right: 10px;
@@ -267,7 +274,12 @@
 
 .section-recent-work {
   background-color: var(--color-background-purple);
-  padding: 80px 0px 80px;
+  padding: 80px 0px;
+}
+
+.recent-work {
+  width: 50%;
+  margin: 0px auto;
 }
 
 .recent-work__title {
@@ -278,7 +290,7 @@
 }
 
 .recent-work .text_purple {
-  width: 51.3%;
+  width: 100%;
   margin: 0px auto 60px;
   color: var(--color-text-purple);
   text-align: center;
@@ -337,24 +349,31 @@
 .section-get-in-touch {
   padding: 81px 0px 80px 0px;
 }
+
 .get-in-touch {
   display: flex;
   justify-content: center;
 }
+
+.get-in-touch__header {
+  width: 60%;
+}
+
 .get-in-touch__title {
   margin-bottom: 10px;
   color: var(--color-white);
   font: normal 800 34px / normal Raleway;
   text-align: center;
 }
+
 .get-in-touch .text {
-  width: 60%;
-  margin: 0px auto 40px;
+  margin: 0px 0px 40px;
   color: var(--color-text-grey);
   font: normal 400 14px/24px IBM Plex Mono;
   text-align: center;
   letter-spacing: 0.14px;
 }
+
 .get-in-touch__form {
   display: flex;
   justify-content: center;
@@ -362,8 +381,8 @@
   font: normal 600 12px / normal IBM Plex Mono;
 }
 
-form {
-  width: 31.5%;
+.form {
+  width: 350px;
 }
 
 .get-in-touch__form #Email,
