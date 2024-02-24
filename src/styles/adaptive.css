@@ -7,15 +7,11 @@
         transform: translateX(100%);
     }
 
-    .header.open .hamburger {
-        display: none;
-    }
-
     .hamburger {
         display: block;
         height: 26px;
         width: 32px;
-        position: absolute;
+        position: fixed;
         top: 23px;
         left: 20px;
         z-index: 2;
@@ -39,7 +35,7 @@
         height: 100vh;
         background-color: var(--color-border-black);
         width: 50%;
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -159,10 +155,6 @@
 @media screen and (max-width: 450px){
     .header.open .menu {
         transform: translateY(100%);
-    }
-
-    .header.open .hamburger {
-        display: none;
     }
 
     .menu {

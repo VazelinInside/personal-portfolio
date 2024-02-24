@@ -305,8 +305,32 @@
   margin: 0px 6%;
 }
 
+.slider-wrapper {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.carusel {
+  position: relative;
+  /* left: -625px; */
+  width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.carusel > .item {
+  display: flex;
+  flex-direction: row;
+}
+
 .recent-work-name {
   width: 40.1%;
+}
+
+.recent-work-name.hide {
+  display: none;
 }
 
 .recent-work-name__img {
@@ -378,7 +402,7 @@
   display: flex;
   justify-content: center;
   color: var(--color-white);
-  font: normal 600 12px / normal IBM Plex Mono;
+  font: normal 600 12px / normal IBM Plex Mono; 
 }
 
 .form {

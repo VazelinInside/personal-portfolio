@@ -1,8 +1,10 @@
+const burger = document.getElementById("burger")
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("burger").addEventListener("click", function() {
+    burger.addEventListener("click", function(e) {
+        e.stopPropagation()
         document.querySelector("header").classList.toggle("open")
     })
-    document.getElementById("menu").addEventListener("click", function() {
-        document.querySelector("header").classList.toggle("open")
-    })
+})
+window.addEventListener("click", function() {
+    document.querySelector("header").classList.remove("open")
 })
